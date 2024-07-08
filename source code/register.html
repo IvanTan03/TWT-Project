@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <title>Numzoo</title>
+    <link rel="icon" href="Image/tab-logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+
+        <div class="page active" id="page1">
+            <h1>Enter your child's nickname</h1>
+            <div class="nickname-section">
+                <input type="text" id="nickname" placeholder="Child's nickname" maxlength="20">
+                <button onclick="nextPage(2)">Next</button>
+            </div>
+        </div>
+
+<div class="page" id="page2">
+    <h1>How old is <span id="child-name"></span>?</h1>
+    <div class="age-options">
+        <div class="age-option" onclick="selectAge(3)">3 years old</div>
+        <div class="age-option" onclick="selectAge(4)">4 years old</div>
+        <div class="age-option" onclick="selectAge(5)">5 years old</div>
+    </div>  
+    <div class="back-arrow-container">
+        <a href="#" onclick="previousPage(1)" class="back-arrow">&#8249; Back</a>
+    </div>
+</div>
+
+<div class="page" id="page3">
+    <h1>Here's what <span id="child-name-info"></span> will learn at <span id="selected-age"></span> years old:</h1>
+    <div class="age-selector">
+        <div class="age-option" onclick="showLearningTopics(3)">3</div>
+        <div class="age-option" onclick="showLearningTopics(4)">4</div>
+        <div class="age-option" onclick="showLearningTopics(5)">5</div>
+    </div>
+    <ul id="learning-topics"></ul>
+    <div class="back-arrow-container">
+        <a href="#" onclick="previousPage(2)" class="back-arrow">&#8249; Back</a>
+    </div>
+    <div class="done-arrow-container">
+        <button onclick="nextPage(4)" class="done-arrow">Next &rsaquo;</button>
+    </div>    
+</div>
+
+<div class="page" id="page4">
+    <h1>Help <span id="child-name-info-4"></span> to build a learning habit</h1>
+    <form id="registration-form" action="register.php" method="POST">
+        <div id="goal-setting-container">
+            <h2>Set Practice Goal</h2>
+            <label for="practice-minutes">Minutes (max 30):</label><br>
+            <input type="range" id="practice-minutes" name="practice_minutes" min="1" max="30" value="15" oninput="updateMinutesDisplay()" required><br>
+            <span id="minutes-display">15</span> minutes
+        </div>
+        <input type="hidden" id="user-id" name="user_id">
+        <input type="hidden" id="child-nickname-hidden" name="child_nickname">
+        <input type="hidden" id="child-age-hidden" name="child_age">
+        <div class="back-arrow-container">
+            <a href="#" onclick="previousPage(3)" class="back-arrow">&#8249; Back</a>
+        </div>
+        <div class="done-arrow-container">
+            <button type="submit" class="done-arrow" onclick="completeRegistration()">Done &rsaquo;</button>
+        </div>  
+    </form>
+</div>
+
+        <div class="progress-indicator">
+            <div class="progress-circle active" id="progress1"></div>
+            <div class="progress-circle" id="progress2"></div>
+            <div class="progress-circle" id="progress3"></div>
+            <div class="progress-circle" id="progress4"></div>
+        </div>
+    </div>
+
+    <script src="Java Script/register.js"></script>
+</body>
+</html>

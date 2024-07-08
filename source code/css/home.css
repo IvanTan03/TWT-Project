@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+body {
+    font-family: 'Bubblegum Sans', cursive;
+    background-image: url(../Image/homebg.gif);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.welcome-section {
+    background-color: #ffebcd;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border: 3px solid rgb(255, 215, 240);
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.2),  
+        0 6px 20px rgba(0, 0, 0, 0.2), 
+        inset 0 1px 3px rgba(255, 255, 255, 0.6); 
+        background-clip: padding-box;
+        background-origin: border-box;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid white;
+}
+
+.nickname-box {
+    border: 2px solid #add8e6;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color:  #8B4513;
+    font-size: 18px;
+}
+
+#welcome-message {
+    font-size: 20px;
+    color:  #8B4513;
+}
+
+.activity-section {
+    display: flex;
+    background-color: #fff598;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 3px solid rgb(253, 233, 80);
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.2),  
+        0 6px 20px rgba(0, 0, 0, 0.2), 
+        inset 0 1px 3px rgba(255, 255, 255, 0.6); 
+        background-clip: padding-box;
+        background-origin: border-box;
+}
+
+.activity-section p {
+    font-size: 18px;
+}
+
+.goal-container {
+    width: 50%;
+    float: left;
+}
+
+.activity-container {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+.activity-item {
+    background-color: #ffebcd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ff69b4;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff69b4;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+h2, h3 {
+    color:  #8B4513;
+}
+
+.courses-section {
+    background-color: #fff598;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 3px solid rgb(253, 233, 80);
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.2),  
+        0 6px 20px rgba(0, 0, 0, 0.2), 
+        inset 0 1px 3px rgba(255, 255, 255, 0.6); 
+        background-clip: padding-box;
+        background-origin: border-box;
+}
+
+.sidepanel {
+    height: 330px;
+    width: 100px;
+    padding: 2em;
+    float: left;
+    color: white;
+    border-radius: 30px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: rgba(250, 255, 197, 0.83);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.sidepanel a img {
+    width: 50px; 
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.sidepanel a {
+    display: block;
+    padding: 20px;
+    height: auto;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: rgb(243, 229, 129);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidepanel a:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.sidepanel a.active {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.course-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 450px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around; 
+    flex: 1;
+}
+
+.image-item {
+    text-align: center;
+    flex-basis: calc(33.33% - 20px);
+    position: relative;
+}
+
+.image-item a {
+    text-decoration: none;
+}
+
+.image-container {
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    transition: background-color 0.3s ease, padding 0.3s ease; 
+}
+
+.image-container img {
+    margin-top: 15px;
+    width: 90%; 
+    height: auto;
+    border-radius: 30px;
+}
+
+.image-container:hover {
+    padding: 5px; 
+}
+
+.content p {
+    margin-top: 5px;
+    color:  #8B4513;
+    font-size: 18px;
+}
+
+#tutorial-content {
+    display: flex; 
+}
+
+#exercise-content {
+    display: none; 
+}
+
+
+.recommended-label {
+    display: block;
+    background-color: #ff69b4;
+    color: white;
+    padding: 5px;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.settings-button {
+    position: absolute;
+    right: 100px;
+    top: 45px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.settings-button:hover {
+    background-color: #f8e1ac;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input[type="number"],
+form input[type="password"] {
+    padding: 10px;
+    border: 2px solid #add8e6;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 200px; 
+}
+
+input[type="number"],
+input[type="password"],
+input[type="range"] {
+    padding: 10px;
+    border: 2px solid #add8e6;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+input[type="number"]::placeholder,
+input[type="password"]::placeholder,
+input[type="range"]::placeholder {
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+label {
+    font-size: 18px;
+    color: #333333;
+    margin: 10px 0;
+    display: block;
+}
+
+#update-age-btn, #update-password-btn, #update-goal-btn {
+    width: 150px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff69b4;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+#logout-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+#update-age-btn:hover,
+#update-password-btn:hover,
+#update-goal-btn:hover {
+    background-color: #ff1493;
+}
+
+#logout-btn:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+    background-color: #ffebcd;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 2px solid #add8e6;
+    width: 80%; 
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.settings-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top:-10px;
+}
+
+.settings-button img.settings-icon {
+    width: 60px;
+    height: 60px; 
+    vertical-align: middle; 
+}

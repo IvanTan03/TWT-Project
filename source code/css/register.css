@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: 'Bubblegum Sans', cursive;
+    background-image: url(../Image/registerbg.png);
+    background-size: cover;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.714);
+    border-radius: 20px;
+    margin-left: 440px;
+    margin-bottom: 60px;
+    padding: 2em;
+}
+
+
+.nickname-section, .age-section, .learning-info {
+    margin: 20px 0;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+button {
+    font-family: 'Bubblegum Sans', cursive;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #554fb8;
+}
+
+.age-options, .age-selector {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.age-option {
+    padding: 20px;
+    background-color: #6c63ff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.age-option:hover {
+    background-color: #554fb8;
+}
+
+.hidden {
+    display: none;
+}
+
+.progress-indicator {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.progress-circle {
+    width: 15px;
+    height: 15px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.progress-circle.active {
+    background-color: #6c63ff;
+}
+
+.navigation-buttons {
+    position:relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.back-arrow {
+    position: absolute;
+    bottom: -50px;
+    left: -10px;
+    font-size: 16px;
+    color: #333; 
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.done-arrow {
+    position: absolute;
+    bottom: -50px;
+    right: -10px;
+    font-size: 16px;
+    color: #333; 
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+
+.next {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.page {
+    display: none;
+    position:relative;
+}
+
+.page.active {
+    display: block;
+}
+
+.learning-info {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.learning-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.learning-info li {
+    margin: 5px 0;
+}
+
+.button.done {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px; 
+    transition: background-color 0.3s; 
+}
+
+.button.done:hover {
+    background-color: #554fb8;
+}
+
+#learning-topics {
+    list-style-type: none; 
+    padding: 0;
+    margin-top: 20px;
+}
+

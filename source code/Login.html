@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numzoo</title>
+  <link rel="stylesheet" type="text/css" href="css/Login.css">
+  <link rel="icon" href="Image/tab-logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="left-navbar">
+            <img src="Image/Logo.png" alt="Logo" class="Logo">
+        </div>
+        <div class="center-navbar">
+            <a href="index.html" class="navigation">Home</a>
+            <a href="About.html" class="navigation ">About us</a>
+        </div>
+        <div class="right-navbar">
+            <a href="Login.html" class="navigation active">Login</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1>Numzoo</h1>
+        <button id="loginpop-up" class="main-btn">Log In</button>
+        <button id="registerpop-up" class="main-btn">Create Account</button>
+    </div>
+
+    <div id="loginModal" class="modal">
+        <form class="modal-content" action="login.php" method="post">
+            <span class="close" id="closeLogin">&times;</span>
+            <h2>Login</h2>
+            <input type="email" name="email" placeholder="Your Email Address" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button id="loginButton" class="modal-btn">Log In</button>
+        </form>
+    </div>
+
+    <div id="registerModal" class="modal">
+        <form class="modal-content" action="createaccount.php" method="POST">
+            <span class="close" id="closeRegister">&times;</span>
+            <h2>Create Account</h2>
+            <input type="email" name="email" placeholder="Your Email Address" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <button id="registerButton" class="modal-btn">Create Account</button>
+        </form>
+    </div>
+
+    <script src="Java Script/Login.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+body {
+    background-image: url('../Image/indexbg.svg');
+    background-size: cover;
+    margin: 0;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 70px;
+  width: 100%;
+  max-width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0 20px; 
+  overflow: hidden; 
+  box-sizing: border-box; 
+}
+
+.left-navbar img {
+  height: 160px; 
+  margin-top: 20px; 
+  margin-left: 20px;
+}
+
+.center-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; 
+}
+
+.right-navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-weight: 300;
+  font-family: "Comic Sans MS", cursive;
+  font-size: 17px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.navigation:hover,
+.navigation.active {
+  background: green;
+  color: white;
+  transform: scale(1.05); 
+}
+
+.navigation:active {
+  transform: scale(0.95); 
+}
+
+:root {
+    --color-primary: #f6aca2;
+    --color-secondary: #f49b90;
+    --color-tertiary: #f28b7d;
+    --color-quaternary: #f07a6a;
+    --color-quinary: #ee6352;
+  }
+
+.text-shadows {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+      9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 150px; 
+    color: var(--color-primary);
+    animation: shadows 2.5s ease-in infinite;
+    letter-spacing: 0.4rem;
+    font-family: "Comic Sans MS", cursive;
+  }
+  
+  
+  @keyframes shadows {
+    0%{
+    text-shadow: none;
+  }
+  10% {
+    transform: translate(-3px, -3px);
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  20% {
+    transform: translate(-6px, -6px);
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    transform: translate(-9px, -9px);
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  80% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  90% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  100% {
+    text-shadow: none;
+  }
+  }
+ 
+  .startbutton {
+    text-align: center;
+    margin-top: 55px;
+}   
+
+.startjourney {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #f2970e;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    font-family: "Comic Sans MS", cursive;
+}
+
+.startjourney:hover {
+    background-color: #fe9e67; 
+}
+
+.lion-container {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -40px;
+    transform: translateX(-50%);
+}
+
+#lion {
+    width: 350px;
+    height: 300px;
+    background-image: url('../Image/lion1.png');
+    background-size: cover;
+    transition: background-image 0.1s;
+}
+
+#lion:hover {
+    background-image: url('../Image/lion2.png');
+}
+
+.hippo-container {
+    position: fixed;
+    bottom: 0;
+    left: 60%;
+    margin-right: 50px;
+    transform: translateX(-50%);
+}
+
+#hippo {
+    width: 300px;
+    height: 260px;
+    background-image: url('../Image/hippo1.png');
+    background-size: cover;
+    transition: background-image 0.1s;
+}
+
+#hippo:hover {
+    background-image: url('../Image/hippo2.png');
+}
