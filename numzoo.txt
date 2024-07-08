@@ -1,0 +1,29 @@
+CREATE TABLE user_info (
+    id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    child_nickname VARCHAR(255) NOT NULL,
+    child_age INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    practice_minutes INT(3) NOT NULL
+);
+
+CREATE TABLE progress (
+    progress_id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    exercise_url VARCHAR(255) NOT NULL,
+    id INT NOT NULL,
+    FOREIGN KEY (id) REFERENCES user_info(id)
+);
+
+CREATE TABLE comments (
+    comment_id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    id INT NOT NULL,
+    tutorial_id VARCHAR(255) NOT NULL,
+    comment_text TEXT NOT NULL,
+    parent_comment_id INT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id) REFERENCES user_info(id),
+    FOREIGN KEY (parent_comment_id) REFERENCES comments(comment_id) ON DELETE CASCADE
+);
+
+
